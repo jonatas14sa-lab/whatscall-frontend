@@ -13,7 +13,7 @@
     {
       "src": "/api/(.*)",
       "headers": {
-        "Location": "https://seu-backend.vercel.app/api/$1"
+        "Location": "https://whatscall-backend.vercel.app/api/$1"
       },
       "status": 301
     },
@@ -21,8 +21,5 @@
       "src": "/(.*)",
       "dest": "/index.html"
     }
-  ],
-  "env": {
-    "REACT_APP_BACKEND_URL": "@backend_url"
-  }
+  ]
 }
