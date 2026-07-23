@@ -193,7 +193,7 @@ export default function AdminDashboard() {
     } finally { setLoading(false); }
   };
 
-  useEffect(() => { load(); /* eslint-disable-next-line react-hooks/exhaustive-deps */ }, []);
+  useEffect(() => { load(); }, []);
 
   const logout = () => { clearToken(); navigate("/admin"); };
   const del = async (id) => {
